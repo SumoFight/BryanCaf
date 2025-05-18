@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+<food>
+    <name>Beetroot and feta salad</name>
+    <price>$15.00</price>
+    <description>
+   Suitable for vegetarians, made with fresh beetroot
+   </description>
+</food>
+<food>
+    <name>Sourdough Rye Sandwich</name>
+    <price>$18.00</price>
+    <description>
+    Cheese and salad sandwich made with organic, sourdough rye bread
+    </description>
+</food>
+<food>
+    <name>Spinach Pie and Salad</name>
+    <price>$20.00</price>
+    <description>
+    Tasty pie with salad
+    </description>
+</food>
+<food>
+    <name>French Toast</name>
+    <price>$4.50</price>
+    <description>
+    Thick slices made from our homemade sourdough bread
+    </description>
+    <calories>600</calories>
+</food>
+<drink>
+    <name>Soda</name>
+    <price>$3.00</price>
+</drink>
+<drink>
+    <name>Fresh Juice</name>
+    <price>$6.00</price>
+</drink>
+<drink>
+    <name>Bottled water</name>
+    <price>$2.00</price>
+</drink>
+</menu>
+
+
+<!--Purpose-->
+
+Purpose
+The purpose of this XML file is to store and structure the menu items for Bryan’s Café. It defines available food and drink options, including their names, prices, descriptions, and other relevant details. This file can be used to generate dynamic content on a website or to be processed by other systems (e.g., mobile apps, digital menus).
+
+Expected Structure
+	•	The root element is <menu>, which contains all items offered by the café.
+	•	Two main types of items are included:
+	•	<food>: Represents a food item.
+	•	<drink>: Represents a drink item.
+	•	Each <food> or <drink> element includes:
+	•	<name> – the name of the item.
+	•	<price> – the cost of the item.
+	•	Optional elements for food items:
+	•	<description> – a text description of the item.
+	•	<calories> – the calorie count (only present for some food items).
+
+Required Functionality
+	•	The XML must be well-formed to be usable in web and software systems.
+	•	It must allow the definition of both food and drink items under the same <menu> root.
+	•	The file should support expansion with additional elements or attributes in the future.
+	•	It should support integration into web pages or systems that display menu items or process orders.
+
+Entities, Elements, and Attributes
+
+Entities
+No entities are currently used in the XML file. Entities could be added if there is a need to reuse repeated text or symbols.
+Example (not currently used):
+<!ENTITY currency "$">
+
+Elements
+	•	<menu>: Root element that contains all food and drink items.
+	•	<food>: Represents a food item.
+	•	<drink>: Represents a drink item.
+	•	<name>: Name of the food or drink.
+	•	<price>: Price of the item.
+	•	<description> (optional): A description of a food item.
+	•	<calories> (optional): Calorie count, only included for some food items.
+
+Attributes
+There are no attributes used in the current structure. However, attributes could be added to identify items or mark dietary info. For example:
+<food type="vegetarian">
+  <name>...</name>
+</food>

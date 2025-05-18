@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<branches>
+    <branch>
+        <location>76 Devonshire St, Surry Hills NSW</location>
+        <phone>Phone: 02 9262 5678</phone>
+        <schedule>Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</schedule>
+    </branch>
+    <branch>
+        <location>451 Pitt St, Haymarket Sydney, NSW</location>
+        <phone>Phone: 02 9262 5678</phone>
+        <schedule>Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</schedule>
+    </branch>
+    <branch>
+        <location>31 Alfred Street, Circular Quay, NSW</location>
+        <phone>Phone: 02 8971 9101</phone>
+        <schedule>Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</schedule>
+    </branch>
+</branches>
+
+
+<!--Purpose-->
+
+Purpose
+The purpose of this XML file is to store and structure branch information for Bryan’s Café. It contains the location, phone number, and opening hours of each café branch. This data can be used to populate a website, feed into other applications, or validate structure using a DTD.
+
+Expected Structure
+	•	The root element is <branches>, which contains all branch records.
+	•	Each <branch> element represents one physical location.
+	•	Each <branch> includes three child elements:
+	•	<location> – the address of the branch
+	•	<phone> – the contact phone number
+	•	<schedule> – the business hours
+
+Required Functionality
+	•	The XML must be well-formed to be readable by parsers and other tools.
+	•	It must support multiple <branch> entries under the <branches> root.
+	•	The structure should be consistent and optionally validated against a DTD.
+	•	The XML file should support integration into a website or back-end system where branch data is displayed or processed.
+
+Entities, Elements, and Attributes
+
+Entities:
+No entities are currently used. However, predefined or custom entities could be included for special characters or repeatable text values if needed.
+
+Example (not currently in use):
+<!ENTITY commonPhone "Phone: 02 9262 5678">
+Elements
+	•	<branches>: The root element.
+	•	<branch>: Represents a single branch location.
+	•	<location>: Contains the full address.
+	•	<phone>: Contains the contact number.
+	•	<schedule>: Contains the business hours.
+
+Attributes
+No attributes are used in the current XML file. If needed, attributes could be added to the <branch> element for identification or classification purposes.
+Example:
+<branch id="1">
+  <location>...</location>
+</branch>
